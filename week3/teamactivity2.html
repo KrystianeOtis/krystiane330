@@ -219,7 +219,7 @@
 
         // ## Array Cardio Day 2
 
-        const people = [{
+        const peoples = [{
                 name: 'Wes',
                 year: 1988
             },
@@ -268,7 +268,7 @@
         //     }
         // });
 
-        const isAdult = people.some(person => ((new Date()).getFullYear()) - person.year >= 19)
+        const isAdult = peoples.some(person => ((new Date()).getFullYear()) - person.year >= 19)
 
         console.log({
             isAdult
@@ -276,7 +276,7 @@
 
         // Array.prototype.every() // is everyone 19 or older?
 
-        const allAdults = people.every(person => ((new Date()).getFullYear()) - person.year >= 19)
+        const allAdults = peoples.every(person => ((new Date()).getFullYear()) - person.year >= 19)
         console.log({
             allAdults
         });
