@@ -1,0 +1,9 @@
+#board{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+}
+.box {
+    border: black 1px solid;
+
+}
