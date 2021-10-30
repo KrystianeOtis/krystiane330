@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Notes | Krystiane Otis</title>
+    <meta name="description" content="Week 7 Notes from WDD 330: Web Frontend Development II">
+</head>
+
+<body>
+    <header>
+        <h1>Week 7 Notes</h1>
+    </header>
+    <main>
+        <h2>JavaScript: Novice to Ninja, 2nd Edition</h2>
+        <h3>Chapter 11: Further Functions</h3>
+        <ul>
+            <li>All functions have a length property that returns the number of parameters that the function has</li>
+            <li>The call() method can set the value of `this` inside a function to an object if it is the first argument
+            </li>
+            <li>The call() method will take the value of `this` and use it in the function</li>
+            <li>If any other arguments need to be called in the parameters then they must be provided after the first
+                argument</li>
+            <li>If there aren't any objects that `this` will be refering to then the first argument will need to be
+                provided as null</li>
+            <li>If data is being used in an argument formatted as an array then you can use the apply() method</li>
+            <li>It is possible to create your own properties to a function</li>
+            <li>Memoization - result caching</li>
+            <li>Result caching is useful because it can save a result and call it again without computing it again,
+                saving time</li>
+            <li>Immediately Invoked Function Expression (or IIFE - pronounced 'iffy') is an anonymous function. They are
+                useful because you can wrap variables up within the scope of the function</li>
+            <li>Variables cannot be removed from a scope once they are declared. If you need to use a temporary variable
+                then it is best to use an IIFE because once the function is done then it will disapear</li>
+            <li>An IIFE can set up variables, objects, and event handlers when a page loads</li>
+            <li>Using strict mode can be tricky so it is best to place 'use strict' inside an IIFE</li>
+            <li>An IIFE can add or remove code seperately by enclosing code inside of its own private block</li>
+            <li>Anonymous functions can define and rewrite themselves</li>
+            <li>Init-Time Branching - enables functions to work more effectively in the browser and avoid checking for
+                features everytime they are called</li>
+            <li>Recursive Functions - Invokes itself until a certain condition is met. This is useful when iterating
+            </li>
+            <li>Callback Hell - Tangled mess of code <a href="http://callbackhell.com/">Visit this site for more
+                    info</a></li>
+            <li>Promises - Resolved: completed successfully || Rejected: was not completed successfully or resulted in
+                an error</li>
+            <li>Functions can return functions</li>
+            <li>A Closure: a reference to a variable that was created inside the scope of another function, but is then
+                kept alive and used in another part of the program</li>
+        </ul>
+        <h3>Chapter 13: AJAX</h3>
+        <ul>
+            <li>AJAX is an acronym for Asynchronous JavaScript and XML</li>
+            <li>Asynchronous
+                When a request for data is sent, the program doesn’t have to stop and wait for the response. It can
+                carry on running, waiting for an event to fire when a response is received. By using callbacks to manage
+                this, programs are able to run in an efficient way, avoiding lag as data is transferred back and forth.
+            </li>
+            <li>JavaScript
+                JavaScript was always considered a 'front-end' language, not used to communicate with the server. Ajax
+                enabled JavaScript to send requests and receive responses from a server, allowing content to be updated
+                in real time.</li>
+            <li>XML
+                When the term Ajax was originally coined, XML documents were often used to return data. Many
+                different types of data can be sent, but by far the most commonly used in Ajax nowadays is JSON,
+                which is more lightweight and easier to parse than XML. (Although it has never really taken off, the
+                term Ajaj is sometimes used to describe the technique.) JSON also has the advantage of being
+                natively supported in JavaScript, so you can deal with JavaScript objects rather than having to
+                parse XML files using DOM methods.</li>
+            <li>Redirect() is a method that redirects to another URL</li>
+            <li>Text() is a method that reads text and returns a promise</li>
+            <li>Blob() is a method that is used to read a file of raw data, it then returns a promise that resolves with
+                a blob object</li>
+            <li>JSON responses - json() method transforms JSON data into a promise and resolves it to a JavaScript
+                object</li>
+            <li>AJAX can receive and send information in many different formats, however it is usually a JSON string
+                when sending</li>
+            <li>The FormData interface makes it easier to submit information using AJAX</li>
+        </ul>
+
+        <h2>Team Activity</h2>
+        <li><a
+                href="https://byui.zoom.us/rec/share/rqewk7K_ISgvZCbV4qF5ysg0ZnberS4h8kjKegivnNwePmb2oz2WDJyAdjkK7D7z.Gq-S6QGGGMr9E-BP">Team
+                Meeting Zoom Recording</a></li>
+        <!-- <li><a href="">Team Activity</a></li> -->
+    </main>
+    <footer>
+    </footer>
+    </div>
+</body>
+
+</html>
