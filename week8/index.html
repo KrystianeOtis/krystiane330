@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 Notes | Krystiane Otis</title>
+    <meta name="description" content="Week 8 Notes from WDD 330: Web Frontend Development II">
+</head>
+
+<body>
+    <header>
+        <h1>Week 8 Notes</h1>
+    </header>
+    <main>
+        <h2>HTML & CSS3 FOR THE REAL WORLD: 2ND EDITION</h2>
+        <h3>Chapter 8: Transforms and Transitions</h3>
+        <ul>
+            <li>Translation - a function that allows elements to move left, right, up, or down</li>
+            <li>Translation doesn't impact the flow of the document</li>
+            <li>Translated elements can only be moved relative to its current position.</li>
+            <li>translate(x,y) moves an element up and down, left and right. Example of this: transform: translate(45px,
+                -45px);</li>
+            <li>if you only want to move element up or down you use => transform: translateY(-30px); </li>
+            <li>to only move an element left and right you use => transform: translateX(45px);</li>
+            <br>
+            <li>Scaling - a function that scales an element by its horizontal and vertical factors. looks like this =>
+                scale(x,y)</li>
+            <li>If you only include one element in the scale parameters then both x and y will be affected. If 2 numbers
+                that are different are used then it will likely distort the element. Example => transform: scale(1.5,
+                0.25);</li>
+            <li>Translate and scale can both be used at the same time in transform. Example => transform:
+                translateX(40px) scale(1.5);</li>
+            <br>
+            <li>Rotation - a function that rotates an element around the point of origin</li>
+            <li>Here is an example of all 3 functions being used together => transform: rotate(10deg)
+                translateX(40px) scale(1.5);
+            </li>
+            <li>Skew is used to make kind of a diagnol. It skews the element along the x and y axis</li>
+            <li>transform-orgin - can control the origin point at where the element is transformed</li>
+            <li>It matters the order in which you place the transform functions. Here is a direct quote from the
+                chapter to better explain. "The order of transform functions does matter: if you rotate before
+                translating, your translate direction will be on the rotated axis. The rightmost square in Figure
+                8.8 was translated then rotated with transform: translateX(200px) rotate(135deg);. The leftmost
+                square was rotated first then translated along the newly rotated axis: transform: rotate(135deg)
+                translateX(200px);."</li>
+            <br>
+            <li>Transitions - used to animate elements</li>
+
+            <li>Steps the chapter describes to create simple transition in CSS: </li>
+            <ol>
+                <li>Declare the original state of the element in the default style declaration.</li>
+                <li>Declare the final state of your transitioned element; for example, a :hover state.</li>
+                <li>Include the transition functions in your default style declaration using the transition properties,
+                    including: transition-property, transition-duration, transition-timing-function, and
+                    transition-delay. We’ll
+                    look at each of these and how they work shortly.</li>
+            </ol>
+
+            <li>transition-property - defines the CSS properties of an element that can be transitioned (this is set as
+                "all" for default)</li>
+            <li>transition-duration - how long the transition will take. it is best to get in the habit of using
+                milliseconds(ms) for this since that is all that Javascript can take. (CSS can do seconds and
+                milliseconds)</li>
+            <li>Example of seconds => transition-duration: 0.2s;</li>
+            <li>transition-timing-function - controls the pace of the transition with even greater detail</li>
+            <li>Here are some common timing function => ease, linear, ease-in, ease-out, or ease-in-out</li>
+            <li>cubic-bezier - used to precisely define timing function. Linear Example => cubic-bezier(0, 0, 1, 1)
+            </li>
+            <li>transition-delay - delays the transition to start when you tell it to</li>
+            <br>
+            <li>Animation Properties:</li>
+            <ul>
+                <li>animation-name</li>
+                <li>animation-duration</li>
+                <li>animation-timing-function</li>
+                <li>animation-iteration-count</li>
+                <li>animation-direction</li>
+                <li>animation-fill-mode</li>
+                <li>animation-play-state</li>
+            </ul>
+        </ul>
+        <h3>Chapter 12: Canvas, SVG, and Drag and Drop</h3>
+        <h4>Canvas</h4>
+        <ul>
+            <li>Canvas is an HTML element that can be drawn on using Javascript</li>
+        </ul>
+        <h4>SVG</h4>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Drag and Drop</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+
+
+
+        <h2>Team Activity</h2>
+        <li><a
+                href="https://byui.zoom.us/rec/share/y3ift2OBK3gqZJqmzFkHSGHg-SDhrVfTHBX16NKWsHQKYOj2OQnQsTqk6ixNxIg_.-UTaDX0jCfWWOinl">Team
+                Meeting Zoom Recording</a></li>
+        <!-- <li><a href="">Team Activity</a></li> -->
+    </main>
+
+</body>
+
+</html>
