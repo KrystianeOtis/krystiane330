@@ -14,20 +14,13 @@ body {
 
 header,
 footer {
-    background-color: #000000;
+    background-color: #2b6777;
     color: white;
     padding: 8px;
     border-radius: 15px;
 }
 
-.profile {
-    float: right;
-    margin-right: 10px;
-    margin-top: 10px;
-    height: 170px;
-    box-shadow: 0 0 17px black;
-    image-rendering: -webkit-optimize-contrast;
-}
+
 
 header h1 {
     padding-left: 95px;
@@ -58,17 +51,11 @@ ul {
     color: #585656
 }
 
-footer a,
-footer a:link,
-footer a:visited,
-footer a:hover,
-footer a:active,
-footer a:focus footer {
-    color: white;
-}
-
-footer a:hover {
-    color: rgb(156, 214, 195)
+a {
+    color: #52ab98;
+    font-family: 'PT Sans',
+        sans-serif;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -78,19 +65,4 @@ footer {
     padding-bottom: 2px;
 
     font-size: .8em;
-}
-
-footer p.copyright {
-    margin-bottom: 9px;
-    font-size: .9em;
-}
-
-footer p.dateupdate {
-    color: chartreuse;
-    font-size: .8em;
-    margin-top: 0;
-}
-
-.byui {
-    color: white;
 }

@@ -1,0 +1,159 @@
+/* colors
+#2b6777
+#c8d8e4
+#ffffff
+#52ab98 */
+
+body {
+
+    font-family: 'Roboto Condensed',
+        sans-serif;
+    background: #2b6777;
+    color: #ffffff;
+}
+
+body a {
+    color: #52ab98;
+    font-family: 'PT Sans',
+        sans-serif;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    padding-left: 45px;
+    padding-right: 45px;
+
+}
+
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+h1 {
+
+    margin: 0 0 0 17px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway',
+        sans-serif;
+
+}
+
+/*Menu & Nav bar*/
+nav {
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #ffffff;
+}
+
+nav {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Raleway',
+        sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a .active:hover {
+
+    background-color: #f2f2f2;
+}
+
+nav a.active {
+    background-color: #f2f2f2;
+
+    border-bottom: 5px solid #011936;
+}
+
+nav li {
+    display: block;
+}
+
+
+/*Medium media [tablet]*/
+@media only screen and (min-width: 34.5em) {
+
+    main {
+        margin: auto;
+        max-width: 800px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav {
+        grid-template-columns: repeat(6, auto);
+    }
+
+    nav li {
+        display: block;
+        /*change state in small view*/
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+
+}
+
+
+
+/*Large media [desktop]*/
+@media only screen and (min-width: 54.5em) {
+    main {
+        max-width: 1100px;
+    }
+
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+
+}
