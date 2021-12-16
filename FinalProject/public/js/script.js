@@ -28,10 +28,6 @@ request.onload = function () {
             card.appendChild(img)
 
 
-
-
-
-
         })
 
 
@@ -56,8 +52,14 @@ request.onload = function () {
 
                     let modul = document.getElementById("modul");
                     modul.style.display = 'block';
+                    modul.style.background = 'rgba(250, 126, 126, 0.87)';
 
                     let modulmain = document.getElementById("modulmain");
+
+                    const img = document.createElement('img')
+                    img.src = movie.image
+                    img.alt = movie.title
+                    img.setAttribute('class', 'movie-info')
 
                     const h1 = document.createElement('h1')
                     h1.innerHTML = movie.title
@@ -68,18 +70,49 @@ request.onload = function () {
                     h2.setAttribute('class', 'movie-info')
 
                     const p = document.createElement('p')
-                    movie.description = movie.description.substring(0, 300)
-                    p.innerHTML = `${movie.description}...`
+                    movie.description = movie.description
+                    p.innerHTML = `${movie.description}`
                     p.setAttribute('class', 'movie-info')
 
-                    modul.appendChild(modulmain);
+                    const span = document.createElement('span')
+                    span.innerHTML = "X"
+                    span.setAttribute('id', 'exit')
+
+                    modulmain.appendChild(span);
+                    modulmain.appendChild(img);
                     modulmain.appendChild(h1);
                     modulmain.appendChild(h2);
                     modulmain.appendChild(p);
 
+                    exitButton = document.getElementById("exit").addEventListener('click', e => {
+
+                        async function exitOverlay() {
+
+                            let modul = document.getElementById("modul");
+                            modul.style.display = 'none';
+                            modul.style.background = 'none';
+
+                            let modulmain = document.getElementById("modulmain");
+
+                            for (let x = 1; x < 5; x++)
+                                modulmain.innerHTML = ""
+
+                            // list.removeChild(img);
+                            // modulmain.removeChild(h1);
+                            // modulmain.removeChild(h2);
+                            // modulmain.removeChild(p);
+
+                        }
+
+                        exitOverlay();
+                    })
                 }
                 getMovie();
+
+
             })
+
+
         })
 
     } else {
@@ -120,3 +153,28 @@ function getID(e) {
 
 // let modul = document.getElementById("modul");
 // modul.style.display = 'block';
+
+
+
+
+// exitButton = document.getElementById("exit").addEventListener('click', e => {
+
+//     async function exitOverlay() {
+
+//         let modul = document.getElementById("modul");
+//         modul.style.display = 'hidden';
+
+//         let modulmain = document.getElementById("modulmain");
+
+//         for (let x = 1; x < 5; x++)
+//             modulmain.innerHTML = ""
+
+//         // list.removeChild(img);
+//         // modulmain.removeChild(h1);
+//         // modulmain.removeChild(h2);
+//         // modulmain.removeChild(p);
+
+//     }
+
+//     exitOverlay();
+// })

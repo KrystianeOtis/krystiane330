@@ -350,7 +350,7 @@ template {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(250, 126, 126, 0.87);
 }
 
 #modulmain {
@@ -358,6 +358,7 @@ template {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  width: 90%;
 }
 
 .container {
