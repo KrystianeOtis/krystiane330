@@ -1,0 +1,16 @@
+{
+  "name": "anime-app",
+  "version": "1.0.0",
+  "description": "Movie and Tv show information",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch ./database.json",
+    "start-auth": "node server.js"
+  },
+  "author": "Krystiane Otis",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
